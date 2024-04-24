@@ -8,3 +8,5 @@ logs
 .env
 .env.*
 !.env.example
+sitemaps/*
+!sitemaps/custom-example.xml
