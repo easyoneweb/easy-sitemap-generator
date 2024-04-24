@@ -1,5 +1,5 @@
 import SitemapGenerator from 'sitemap-generator';
-import type { EventTypes  } from '../../types/sitemap';
+import type { EventTypes } from '../../types/sitemap';
 
 class Sitemap {
   #url;
@@ -8,7 +8,8 @@ class Sitemap {
   constructor(url: string) {
     this.#url = url;
     this.#generator = SitemapGenerator(this.#url, {
-      stripQuerystring: false
+      stripQuerystring: true,
+      filepath: process.env.FILE || './sitemaps/sitemap.xml'
     });
   }
 

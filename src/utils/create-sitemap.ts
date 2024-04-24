@@ -1,4 +1,5 @@
 import { Cron, Sitemap } from '../lib';
+import updateSitemapToFullSpec from './update-to-full-spec';
 
 function createSitemap() {
   if (!process.env.SITEMAP_URL) {
@@ -9,6 +10,7 @@ function createSitemap() {
 
   sitemap.addEvent('done', () => {
     console.log('[server]: Sitemap has been generated');
+    updateSitemapToFullSpec();
   });
 
   sitemap.startCrawler();
