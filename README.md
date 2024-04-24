@@ -39,7 +39,7 @@ Application is using environment variables. You have to define: NODE_ENV (develo
 
 ## Additional information
 
-Easy-Sitemap is built on NodeJS (^18.17.0), ExpressJS (^4), MongoDB. Please, before proceed be sure to check official documentation on corresponding technology.
+Easy-Sitemap is built on NodeJS (^18.20.2), ExpressJS (^4), MongoDB. Please, before proceed be sure to check official documentation on corresponding technology.
 
 # Copyright
 
