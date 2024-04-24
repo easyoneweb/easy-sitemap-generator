@@ -1,4 +1,4 @@
-# Easy-Stiemap
+# Easy-Sitemap
 Application for automatic sitemap generation.
 
 ## Setup
