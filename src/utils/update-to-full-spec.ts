@@ -13,7 +13,7 @@ function getUrlPriority(location: string[]) {
 
   if (!location.length) return priority;
 
-  if (location[0].includes(process.env.SITEMAP_URL || '')) priority = '1.0';
+  if (location[0] === process.env.SITEMAP_URL) priority = '1.0';
   if (location[0].includes(process.env.PRIORITY_9 || '')) priority = '0.9';
   if (location[0].includes(process.env.PRIORITY_8 || '')) priority = '0.8';
   if (location[0].includes(process.env.PRIORITY_5 || '')) priority = '0.5';
