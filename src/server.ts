@@ -8,6 +8,7 @@ const app: Express = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json({ limit: '10mb' }));
+app.use(express.static('./sitemaps'));
 
 createSitemapTask();
 
